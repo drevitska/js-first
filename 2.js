@@ -18,7 +18,7 @@ if (res === 0) {
 }else {
     while (res !== 0) {
       number1 = number2,
-      number2 = res
+      number2 = res,
       res = number1 % number2;
     }
 console.log('наибольший общий делитель =', number2);

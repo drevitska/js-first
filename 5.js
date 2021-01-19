@@ -5,24 +5,25 @@ let even = 0, odd = 0, plus = 0, minus = 0 , nol = 0;
 
 for (let i = 0; i < 10; i++) {
 
-  let ww = +prompt('введите целое число');
-  console.log(ww)
-  if (ww > 0) {
+  let num = +prompt('введите целое число');
+  
+  if (num > 0) {
     plus++
   } 
   
-  if (ww < 0) {
+  if (num < 0) {
     minus++
   } 
 
-  if (ww === 0) {
+  if (num === 0) {
     nol++
-  }
-
-  if (ww!== 0 && ww % 2 === 0) {
+  } else {
+    if (num % 2 === 0) {
     even++
-  } else if (ww!== 0){
+    }
+    else {
     odd++
+    }
   }
 }
 console.log('Вы ввели',plus,'положитнльных чисел')
